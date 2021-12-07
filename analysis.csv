@@ -1,1 +1,5 @@
 word2vec-google-news-300,3000000,13,79,0.16455696202531644
+glove-twitter-200,1193514,4,78,0.05128205128205128
+glove-wiki-gigaword-200,400000,10,80,0.125
+glove-wiki-gigaword-50,400000,8,80,0.1
+glove-wiki-gigaword-100,400000,9,80,0.1125

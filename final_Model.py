@@ -117,9 +117,6 @@ google_news5Guess = [google_news5Guess[i:i+n]
                      for i in range(0, len(google_news5Guess), n)]
 
 
-# google_news5Guess[49] = 'None'
-
-
 print('\n')
 print('*****google_news5Guess****')
 print(google_news5Guess)
@@ -130,19 +127,6 @@ truth_vectGoogle = []
 
 getLists_intersection(google_news5Guess, common_Google, truth_vectGoogle)
 
-# for i in range(len(google_news5Guess)):
-#     if(google_news5Guess[i] == 'None Existing'):
-#         common_Google.extend(list_Syn_Choices[i][0])
-#         truth_vectGoogle.append('guess')
-#     elif (set(google_news5Guess[i]).intersection(list_Syn_Choices[i])):
-#         common_Google.extend(
-#             set(google_news5Guess[i]).intersection(list_Syn_Choices[i]))
-#         truth_vectGoogle.append('correct')
-#     else:
-#         common_Google.append(google_news5Guess[i][0])
-#         truth_vectGoogle.append('wrong')
-
-# del common_Google[49]
 
 print('\n')
 print('*****common_Google****')
@@ -192,9 +176,6 @@ Glovew200_5guess = [Glovew200_5guess[i:i+n]
                     for i in range(0, len(Glovew200_5guess), n)]
 
 
-# Glove200_5guess[49] = 'None'
-
-
 print('\n')
 print('*****Glovew200_5guess****')
 print(Glovew200_5guess)
@@ -206,7 +187,6 @@ truth_vectGLw200 = []
 
 getLists_intersection(Glovew200_5guess, commonGLw200, truth_vectGLw200)
 
-# del commonGL200[49]
 
 print('\n')
 print('*****commonGLw200****')
@@ -253,9 +233,6 @@ GloveTw200_5guess = [GloveTw200_5guess[i:i+n]
                      for i in range(0, len(GloveTw200_5guess), n)]
 
 
-# GloveTw200_5guess[49] = 'None'
-
-
 print('\n')
 print('*****GloveTw200_5guess****')
 print(GloveTw200_5guess)
@@ -267,8 +244,6 @@ truth_vectGLTw200 = []
 
 getLists_intersection(GloveTw200_5guess, commonGLTw200, truth_vectGLTw200)
 
-
-# del commonGLTw200[49]
 
 print('\n')
 print('*****commonGLTw200****')
@@ -336,7 +311,6 @@ truth_vectGL50 = []
 
 getLists_intersection(Glove50_5guess, commonGL50, truth_vectGL50)
 
-# del commonGL50[49]
 
 print('\n')
 print('*****commonGL50****')
@@ -396,7 +370,6 @@ truth_vectGL100 = []
 
 getLists_intersection(Glove100_5guess, commonGL100, truth_vectGL100)
 
-# del commonGL100[49]
 
 print('\n')
 print('*****commonGL100****')

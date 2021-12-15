@@ -152,7 +152,7 @@ v_google = c_google + truth_vectGoogle.count('wrong')
 accu_google = c_google/v_google
 
 Google_analysList = ['word2vec-google-news-300',
-                     '400000', str(c_google), str(v_google), str(accu_google)]
+                     '3,000,000', str(c_google), str(v_google), str(accu_google)]
 
 
 # # ************************************** TASK 2 ********************************************
@@ -212,7 +212,7 @@ vw200 = cw200 + truth_vectGLw200.count('wrong')
 accuw200 = cw200/vw200
 
 Glw200_analysList = ['glove-wiki-gigaword-200',
-                     '400000', str(cw200), str(vw200), str(accuw200)]
+                     '400,000', str(cw200), str(vw200), str(accuw200)]
 
 
 # # ********************************** glove-twitter-200 **************************************
@@ -269,7 +269,7 @@ v_t200 = c_t200 + truth_vectGLTw200.count('wrong')
 accu_t200 = c_t200/v_t200
 
 GlTw200_analysList = ['glove-twitter-200',
-                      '400000', str(c_t200), str(v_t200), str(accu_t200)]
+                      '1,193,515', str(c_t200), str(v_t200), str(accu_t200)]
 
 
 # ****************************************** TASK 3 ******************************************
@@ -336,7 +336,7 @@ v50 = c50 + truth_vectGL50.count('wrong')
 accu50 = c50/v50
 
 Gl50_analysList = ['glove-wiki-gigaword-50',
-                   '400000', str(c50), str(v50), str(accu50)]
+                   '400,000', str(c50), str(v50), str(accu50)]
 
 
 # ********************************** glove-wiki-gigaword-100 **************************************
@@ -395,7 +395,7 @@ v100 = c100 + truth_vectGL100.count('wrong')
 accu100 = c100/v100
 
 Gl100_analysList = ['glove-wiki-gigaword-100',
-                    '400000', str(c100), str(v100), str(accu100)]
+                    '400,000', str(c100), str(v100), str(accu100)]
 
 
 # ******************************************* Writting to Analysis File *******************************************

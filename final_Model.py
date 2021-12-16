@@ -63,7 +63,7 @@ def getSyn_Model(modelGuess_list, list_Syn_Ques, model_name):
             modelGuess.append(guess)
         except:
             modelGuess.append(NoneList)
-    print(modelGuess)
+    # print(modelGuess)
     modelGuess = list(chain.from_iterable(modelGuess))
     for i in modelGuess:
         modelGuess_list.append(i[0])
@@ -85,8 +85,12 @@ def getLists_intersection(GuessList, CommonList, TruthList):
             if ((len(guess_list) == 0) or (guess_list[0] == 'None Existing')):
                 CommonList.append(list_Syn_Choices[i])
                 TruthList.append('guess')
-            CommonList.append(guess_list[0])
-            TruthList.append('correct')
+            elif (guess_list[0] == list_Syn_Ans[i]):
+                CommonList.append(guess_list[0])
+                TruthList.append('correct')
+            else:
+                CommonList.append(GuessList[i][0])
+                TruthList.append('wrong')
         else:
             CommonList.append(GuessList[i][0])
             TruthList.append('wrong')
@@ -356,7 +360,7 @@ Glove100_5guess = [Glove100_5guess[i:i+n]
                    for i in range(0, len(Glove100_5guess), n)]
 
 
-Glove100_5guess[49] = 'None'
+# Glove100_5guess[49] = 'None'
 
 
 print('\n')
